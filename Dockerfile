@@ -52,7 +52,7 @@ RUN cd $BPATH/$NGINX_VERSION && ./configure \
 
 #COPY nginx.conf /etc/nginx/nginx.conf
 #COPY nginx.conf.default /etc/nginx/nginx.conf.default
-
+COPY index.html /usr/share/nginx/html/index.html
 # Expose ports.
 EXPOSE 80
 
